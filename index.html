@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="codificador.js"></script>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Desafio Decodificador</h1>
+        </div>
+    </header>
+    <main>
+        <h2 class="descripcion">Este es un codificador y decodificador de mensajes que puede usar para mensajes secretos</h2>
+    
+        <form class="codificadores">
+            <label for="textoacodificar">Texto a codificar</label>
+            <textarea cols="70" rows="10" id="mensajeCodificar" class="input-padron" required oninput="limpiarAcentos(this); actualizarResultado();" onkeyup="this.value=this.value.toLowerCase()"></textarea>
+            <button type="button" onclick="codificar()">Codificar</button>
+
+            <label for="textoacodificar">Texto a decodificar</label>
+            <textarea cols="70" rows="10" id="resultadodemensaje" class="input-padron" required oninput="limpiarAcentos(this); actualizarResultado();" onkeyup="this.value=this.value.toLowerCase()"></textarea>
+            <button type="button" onclick="decodificar()">Decodificar</button>
+        
+            <label for="textoacodificar">Resultado</label>
+            <textarea cols="70" rows="10" id="resultado" class="input-padron" required readonly></textarea>
+            <button type="button" onclick="copiarResultado()">Copiar</button>
+        </form>   
+    </main>
+</body>
+</html>
+

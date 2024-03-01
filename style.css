@@ -1,0 +1,64 @@
+body {
+    background-image: url(turing.jpg);
+    background-size: cover;
+}
+h1 {
+    color: rgb(247, 226, 35);
+    font-size: 50px;
+    text-align: center; 
+    font-weight: bold; 
+}
+
+.descripcion {
+    color: rgb(247, 226, 35);
+    font-size: 30px;
+    text-align: center;
+}
+label{
+    color: rgb(247, 226, 35);
+    font-size: 25px;
+    margin-bottom: 5px;
+    
+}
+form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding-left: 20px; 
+    margin-top: 10px;
+}
+
+.label-input {
+    margin-bottom: 100px; 
+}
+button {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.decodificadores{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+textarea{
+    margin-bottom: 5px;
+    #resultado {
+        float: right; 
+margin-top: center;
+margin-right: 50px;
+    }
+}
+.r {
+display: block;
+        margin-bottom: 5px;
+        margin-top: 150px;
+        margin-right: 50px;
+
+        
+}
+.r1 {
+    display: block;
+    margin-top: 5px;
+margin-right: 5px;
+}
